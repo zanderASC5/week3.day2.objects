@@ -1,0 +1,72 @@
+@font-face{
+    font-family: "bignoodletoo";
+    src:url(../fonts/bignoodletoo.ttf);
+}
+
+@font-face{
+    font-family: "FuturaNo2D";
+    src:url(../fonts/FuturaNo2D.ttf);
+}
+
+/* gray */
+/* #c1c2c4 */
+
+/* orange */
+/* #f7931e */
+
+/* light blue */
+/* #00aeff */
+
+/* dark back */
+/* #303543 */
+body{
+    margin: 50px 0 0 0;
+    background-color: white;
+}
+
+
+h1,h2{
+    font-family: "bignoodletoo", sans-serif;
+}
+
+p{
+    font-family: "FuturaNo2D",arial,sans-serif;
+}
+
+nav{
+    background-color: #303543;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: solid 1px #00aeff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav svg{
+    width: 200px;
+    height: 50px;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.hero_container p{
+    background:pink;
+    margin:0;
+}
+
+.hero_container #highlight{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 200px;
+}
