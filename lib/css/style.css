@@ -28,7 +28,6 @@ body{
     background-color: #303543;
 }
 
-
 h1,h2,h3{
     font-family: "bignoodletoo", sans-serif;
 }
@@ -79,7 +78,7 @@ header{
 
 #gridDiv{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
 }
 
@@ -97,12 +96,10 @@ header{
     display: none;
 }
 
-
-
-
 .hero_container:not(#highlight){
     cursor: pointer;
 }
+
 .hero_container#highlight{
     /* can have css calculate it! */
     /* Note: the spacing matters! */
@@ -112,9 +109,6 @@ header{
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-
-    background-color: #303543;
-    color: #c1c2c4;
 }
 
 
@@ -127,8 +121,3 @@ header{
     overflow-y: scroll;
     padding: 16px;
 }
-
-.hero_text_container p{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
