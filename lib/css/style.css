@@ -29,25 +29,30 @@ body{
 }
 
 
-h1,h2{
+h1,h2,h3{
     font-family: "bignoodletoo", sans-serif;
 }
 
 p{
     font-family: "FuturaNo2D",arial,sans-serif;
 }
-
 nav{
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px #00aeff;
+}
+footer{
+    border-top: solid 1px #00aeff;
+    margin-top: 100px;
+}
+nav, footer{
     background-color: #303543;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: solid 1px #00aeff;
-    position: fixed;
     width: 100%;
-    top: 0;
 }
-nav svg{
+nav svg, footer svg{
     width: 400px;
     height: 100px;
 }
@@ -69,8 +74,8 @@ header{
 /* START ADDING STUFF HERE! */
 
 #gridDiv{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
 }
 
@@ -89,9 +94,17 @@ header{
 }
 
 .hero_container#highlight{
-    height: 312px;
+    /* can have css calculate it! */
+    /* Note: the spacing matters! */
+    height: calc(312px + 312px + 10px);
+    width: calc(182px + 182px + 182px + 10px + 10px);
     grid-row-start: 1;
     grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    background-color: #303543;
+    color: #c1c2c4;
 }
 
 
@@ -102,5 +115,10 @@ header{
 .hero_container#highlight .hero_text_container{
     display: initial;
     overflow-y: scroll;
+    padding: 16px;
+}
+
+.hero_text_container p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
