@@ -73,7 +73,10 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
+#gridDiv{
+    display:grid;
+    grid-template-columns: repeat(6,auto)
+}
 /* END OF PREMADE */
 
 
